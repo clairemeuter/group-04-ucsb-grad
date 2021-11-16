@@ -1,0 +1,18 @@
+---
+title: "Group 04 UCSB domestic grad enrollment"
+author: "Claire Meuter and Cam Audras"
+date: "11/15/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(here)
+```
+
+```{r}
+## adding new code chunk reading in ucsb_grad_data.csv as ucsb_grad with relative file path -cm
+ucsb_grad <- read_csv(here("data", "ucsb_grad_data.csv"))
+```
+
